@@ -1,0 +1,13 @@
+using sysbus
+
+mach create
+
+$repl?=$ORIGIN/board.repl
+machine LoadPlatformDescription $repl
+
+$app_bin?=$ORIGIN/target/thumbv7em-none-eabihf/debug/semihosting-test
+sysbus LoadELF $app_bin
+
+showAnalyzer cpu.uartSemihosting
+
+start

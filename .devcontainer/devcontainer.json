@@ -1,0 +1,10 @@
+{
+    "image": "ghcr.io/gerharddc/embedded-rust-devcontainer:1.82",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "rust-lang.rust-analyzer"
+            ]
+        }
+    }
+}
