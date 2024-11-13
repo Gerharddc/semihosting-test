@@ -3,6 +3,11 @@ edition = "2018"
 name = "semihosting-test"
 version = "0.1.0"
 
+[[bin]]
+name = "semihosting-test"
+test = false
+bench = false
+
 [dependencies]
 cortex-m = "0.6.0"
 cortex-m-rt = "0.6.10"
